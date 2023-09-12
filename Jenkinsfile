@@ -12,6 +12,8 @@ pipeline {
             steps {
                 echo 'stage build'
                 bat 'dir'
+                bat 'cd test_folder'
+                bat 'dir'
             }
         }
         stage('deploy') {
